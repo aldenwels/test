@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/foundation.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.min.js"></script>
+    <script src="js/list.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgvhMaKx5zdQF-fUcdTtw47UNz1eSzNdc&callback=initialize">
+    </script>
+
+  </head>
+  <body>
+<!-- map -- >
+
+<!-- map end-->
+
+
+<!--MENU BAR -->
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+
+<header class="header">
+  <h1 class="main-header">Furgonana</h1>
+  <ul class="header-subnav">
+    <li><a href="#">About</a></li>
+    <li><a href="#" class="is-active">Contact</a></li>
+    <li><a  id="search">Find</a></li>
+  </ul>
+</header>
+<!--MENU BAR END -->
+
+
+
+
+<!-- SEARCH - SORT -->
+    <div class="row" class = "main-section">
+      <div class="large-8 columns">
+      <div id="map">
+      </div>
+    </div>
+
+
+    <div id="cities" class ="large-4 columns">
+      <input class="search" placeholder="Search" />
+      <button class="sort" data-sort="city">Sort by City</button>
+    <ul class="list">
+      <li>
+        <h3 class="city">Berkeley,California</h3>
+        <p class="country">United States</p>
+        <p class="latitude" style="display:none">37.86184</p>
+        <p class="longitude" style="display:none">-122.31079</p>
+      </li>
+      <li>
+        <h3 class="city">Tijuana</h3>
+        <p class="country">Mexico</p>
+        <p class="latitude" style="display:none">32.565333</p>
+        <p class="longitude" style="display:none">-117.04834</p>
+      </li>
+      <li>
+        <h3 class="city">Mexicalli</h3>
+        <p class="country">Mexico</p>
+        <p class="latitude" style="display:none">32.50976</p>
+        <p class="longitude" style="display:none">-115.42236</p>
+      </li>
+      <li>
+        <h3 class="city">Sonora</h3>
+        <p class="country">Mexico</p>
+        <p class="latitude" style="display:none">32.565333</p>
+        <p class="longitude" style="display:none">-117.04834</p>
+      </li>
+      <li>
+        <h3 class="city">Bahia de kino</h3>
+        <p class="country">Mexico</p>
+        <p class="latitude" style="display:none">28.72913</p>
+        <p class="longitude" style="display:none">-112.0166</p>
+      </li>
+      <li>
+        <h3 class="city">Ciudad Obregon</h3>
+        <p class="country">Mexico</p>
+        <p class="latitude" style="display:none">27.46928</p>
+        <p class="longitude" style="display:none">-109.81933</p>
+      </li>
+      <li>
+        <h3 class="city">Guadalajara</h3>
+        <p class="country">Mexico</p>
+        <p class="latitude" style="display:none">20.65334</p>
+        <p class="longitude" style="display:none">-103.32641</p>
+      </li>
+      <li>
+        <h3 class="city">Morelia</h3>
+        <p class="country">Mexico</p>
+        <p class="latitude" style="display:none">19.69431</p>
+        <p class="longitude" style="display:none"> -101.21704</p>
+      </li>
+      <li>
+        <h3 class="city">Mexico City</h3>
+        <p class="country">Mexico</p>
+        <p class="latitude" style="display:none">19.40443</p>
+        <p class="longitude" style="display:none"> -99.08569</p>
+      </li>
+      <li>
+        <h3 class="city">Cuernavaca</h3>
+        <p class="country">Mexico</p>
+        <p class="latitude" style="display:none">18.84391</p>
+        <p class="longitude" style="display:none">-99.30542</p>
+      </li>
+      <li>
+        <h3 class="city">Juchitan</h3>
+        <p class="country">Mexico</p>
+        <p class="latitude" style="display:none">18.26065</p>
+        <p class="longitude" style="display:none">-97.80029</p>
+      </li>
+      <li>
+        <h3 class="city">Oaxaca</h3>
+        <p class="country">Mexico</p>
+        <p class="latitude" style="display:none">17.04102</p>
+        <p class="longitude" style="display:none">-96.71264</p>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  var places = {
+  valueNames: [ 'city', 'country', 'latitude','longitude']
+}
+var userList = new List('cities', places);
+</script>
+<!-- SEARCH - SORT END -->
+<!-- 
+   - - - - - - - - - - - - 
+-->
+
+
+
+
+
+ 
+  </body>
+</html>
